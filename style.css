@@ -6,22 +6,20 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
     background-color: black;
-    background-image: url("Assets/repeating_bg.jpg");
+    background-image: url("assets/repeating_bg.jpg");
     background-repeat: repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.98);
+
+    /* changes background hue -- change the last value (0,1)*/
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.98); 
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-p {
-    color: #e3a813;
 }
 
 /* GENERAL */
@@ -29,6 +27,23 @@ p {
 a,
 .btn {
     transition: all 300ms ease;
+}
+
+.buffer {
+    height: 30vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+
+.content-container {
+    display: flex;
+    margin: 20vh auto;
+    height: 70%;
+    width: 90%;
+    justify-content: center;
+
+    /* for checking */
+    border-color: white;
+    border-style: solid;
 }
 
 /* DESKTOP NAV */
@@ -44,6 +59,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
+    min-height: 2rem;
     
     /* Scrolled Variables */
     height: 20vh;
@@ -110,9 +126,10 @@ a:hover {
 /* SECTIONS */
 
 section {
-    height: 100vh;
-    box-sizing: border-box;
     min-height: fit-content;
+    height: 100vh;
+    /* box-sizing: border-box; */
+    /* min-height: fit-content; */
 }
 
 .section-container {
@@ -123,8 +140,111 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-    /* margin-top: -20vh; */
-    /* background-color: #e3a813; */
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 95vh;
+}
+
+.profilepic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    
+    /* for checking */
+    /* border-color: white;
+    border-style: solid; */
+}
+
+.profilepic-container img {
+    max-height: 450px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 0 10%;
+
+    /* for checking */
+    /* border-color: white;
+    border-style: solid; */
+}
+
+.profiletext-container {
+    align-self: center;
+    text-align: center;
+    color: white;
+
+    /* for checking */
+    /* border-color: white;
+    border-style: solid; */
+}
+
+.profiletext-container p {
+    margin: 1rem 1rem;
+    font-weight: 600;
+}
+
+.profiletext-p1 {
+    text-align: center;
+}
+
+
+.profiletext-p2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.profiletext-p3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(0, 0, 0) 0.1rem solid;
+    background: rgb(255, 255, 255);
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+    background: rgb(53, 53, 53);
+    color: white;
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
 }
 
 /* ABOUT SECTION */
