@@ -2,11 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Angkor&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -142,21 +143,28 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+    min-height: 85vh;
+
+    /* for checking */
+    /* border-color: white;
+    border-style: solid; */
+}
+
+.profile-container {
     display: flex;
     justify-content: center;
+    padding-top: 20vh;
     gap: 5rem;
-    min-height: 95vh;
 }
 
 .profilepic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
     margin: auto 0;
+    justify-content: center;
     
     /* for checking */
-    /* border-color: white;
-    border-style: solid; */
+    border-color: white;
+    border-style: solid;
 }
 
 .profilepic-container img {
@@ -253,7 +261,49 @@ section {
 
 #about {
     background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    min-height: 100vh;
 } 
+
+.about-container {
+    padding-top: 13vh;
+}
+
+.about-introtext-p1 {
+    text-align: center;
+}
+
+.about-introtext-p2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about-details-container {
+    gap: 4rem;
+    height: 80%;
+    border-color: black;
+    border-style: solid;
+    align-content: center;
+}
+
+.about-pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+
+    border-color: black;
+    border-style: solid;
+}
+
+.about-pic {
+    max-height: 450px;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: 0 10%;
+}
 
 /* PROJECTS SECTION */
 

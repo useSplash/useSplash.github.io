@@ -1,0 +1,15 @@
+@media screen and (max-width: 800px) {
+    .profile-container {
+        gap: 0;
+        flex-wrap: wrap;
+        
+    }
+
+    .profilepic-container{
+        width: 50%;
+    }
+
+    .profilepic-container img{
+        width: 100%;
+    }
+}
