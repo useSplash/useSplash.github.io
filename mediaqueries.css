@@ -1,9 +1,4 @@
 @media screen and (max-width: 800px) {
-    .profile-container {
-        gap: 0;
-        flex-wrap: wrap;
-        
-    }
 
     .profilepic-container{
         width: 50%;
