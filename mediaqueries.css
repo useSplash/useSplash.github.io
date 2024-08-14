@@ -1,3 +1,9 @@
+@media screen and (max-width: 500px) {
+    .about-details-container {
+        /* padding: 10px 30px; */
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     .profilepic-container {
