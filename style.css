@@ -325,7 +325,7 @@ section {
     justify-content: center;
     text-align: justify;
     width: 80%;
-    min-width: 380px;
+    /* min-width: 300px; */
     max-width: 750px;
     margin: auto 0;
 
