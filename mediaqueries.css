@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
-    .about-details-container {
-        /* padding: 10px 30px; */
+    * {
+       max-width: 90%;
     }
 }
 
