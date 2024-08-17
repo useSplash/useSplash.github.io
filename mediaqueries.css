@@ -1,12 +1,4 @@
 @media screen and (max-width: 600px) {
-    .logo {
-        font-size: 1.5rem;
-    }
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
 
     /* .profilepic-container {
         min-width: none;
@@ -38,6 +30,10 @@
 
 @media screen and (max-width: 830px) {
 
+    .logo {
+        font-size: 5vw;
+    }
+
     .profilepic-container {
         width: 60%;
     }
@@ -53,5 +49,22 @@
     .about-pic-container {
         width: 0px;
         height: 0px;
+    }
+    
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+        width: 100vw;
+        background-color: black;
+    }
+
+    .menu-links {
+        display: inline-block;
+    }
+
+    .profile-container {
+        padding-top: 15vh;
     }
 }
