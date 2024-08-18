@@ -121,7 +121,6 @@ a:hover {
 .logo {
     font-size: 2.5rem;
     font-family: "Angkor", serif;
-    padding-bottom: 1vw;
 }
 
 .logo:hover {
@@ -166,7 +165,7 @@ a:hover {
     overflow: hidden;
     transition: all 0.3s ease;
     display: none;
-    opacity: .95;
+    opacity: 99%;
 }
 
 .menu-links a {
@@ -217,7 +216,7 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-    min-height: 85vh;
+    min-height: 93vh;
 
     /* for checking */
     /* border-color: white;
@@ -227,7 +226,7 @@ section {
 .profile-container {
     display: flex;
     justify-content: center;
-    padding-top: 20vh;
+    padding-top: 28vh;
     column-gap: 2rem;
     row-gap: 1rem;
 }
@@ -373,9 +372,9 @@ section {
 .about-pic-container {
     justify-content: center;
     display: flex;
-    width: 10%;
+    width: 30vh;
+    min-width: 200px;
     max-width: 450px;
-    min-width: 270px;
     margin: auto 0;
 
     /* border-color: black;
@@ -444,11 +443,30 @@ section {
 /* PROJECTS SECTION */
 
 #projects {
-    background-color: #13e339;
+    background-color: black;
+    background-image: url("assets/purple_planet_bg.jpg");
+    object-fit: cover;
+    padding-top: 13vh;
+    
+    /* changes background hue -- change the last value (0,1)*/
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.95); 
 } 
+
+.projects-introtext-p1 {
+    text-align: center;
+    color: white;
+}
+
+.projects-introtext-p2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
 
 /* CONTACT SECTION */
 
 #contact {
-    background-color: #e313b2;
+    background-color: white;
 }
