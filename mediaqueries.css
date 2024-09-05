@@ -68,4 +68,12 @@
     .profile-container {
         padding-top: 15vh;
     }
+    
+    .contact-info-container p a{
+        font-size: small;
+    }
+
+    footer {
+        font-size: 12;
+    }
 }
